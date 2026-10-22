@@ -1,0 +1,18 @@
+<button id="openDialog">Open Dialog</button>
+
+<dialog id="myDialog">
+    <p>Welcome to my website!</p>
+    <button id="closeDialog">Close</button>
+</dialog>
+
+<script>
+    const dialog = document.getElementById("myDialog");
+
+    document.getElementById("openDialog").addEventListener("click", () => {
+        dialog.showModal();
+    });
+
+    document.getElementById("closeDialog").addEventListener("click", () => {
+        dialog.close();
+    });
+</script>
